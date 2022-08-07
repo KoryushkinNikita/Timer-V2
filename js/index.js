@@ -63,6 +63,16 @@ document.getElementById('stopButton').addEventListener('click', function(){
     }
 })
 
+document.getElementById('clearButton').addEventListener('click', function(){
+    if ((hours.innerText != 0 || minutes.innerText != 0 || seconds.innerText != 0)){
+        timerStopped();
+        hours.innerText = 0;
+        minutes.innerText = 0;
+        seconds.innerText = 0;
+        document.getElementById('endingText').hidden = true;
+    }
+})
+
 document.getElementById('submitButton').addEventListener('click', function(){
     this.style.backgroundColor = 'white';
     setTimeout(() => this.style.backgroundColor = 'inherit', 100);
