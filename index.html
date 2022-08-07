@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="pet-project" />
+	<meta name="description" content="timer" />
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<title>Timer</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="flex notButton">
+            <div class="block flex">
+                <img src="img/arrow.svg" alt="up" class="up img" id="hoursUp">
+                <span class="hours" id="hours">0</span>
+                <img src="img/arrow.svg" alt="up" class="down img" id="hoursDown">
+            </div>
+            <span class="textBetween">Hours</span>
+            <div class="block flex">
+                <img src="img/arrow.svg" alt="up" class="up img" id="minutesUp">
+                <span class="minutes" id="minutes">0</span>
+                <img src="img/arrow.svg" alt="up" class="down img" id="minutesDown">
+            </div>
+            <span class="textBetween">Minutes</span>
+            <div class="block flex">
+                <img src="img/arrow.svg" alt="up" class="up img" id="secondsUp">
+                <span class="seconds" id="seconds">0</span>
+                <img src="img/arrow.svg" alt="up" class="down img" id="secondsDown">
+            </div>
+            <span class="textBetween">Seconds</span>
+        </div>
+        <span class="endingText" id="endingText" hidden>Timer finished</span><br>
+        <button type="submit" class="Button" id="stopButton">stop</button>
+        <button type="submit" class="Button" id="submitButton">start</button>
+    </div>
+	
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
